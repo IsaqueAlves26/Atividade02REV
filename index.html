@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .Resultado{
+        color:blue
+      }
+      button{ 
+        font-size: 20px;
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Dados</h1>
+    <button onclick="Seu_nome()">Clique para começar</button>
+    <section id="resultado">
+        <p class="Resultado">Aqui vai aparecer o nome... </p>
+    </section>
+    <script>
+        function Seu_nome() {
+            let nome = window.prompt('Qual é o seu nome?')
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! Satisfação em conhecer você! </p> &#129393;`
+        }
+    </script>
+</body>
+</html>
